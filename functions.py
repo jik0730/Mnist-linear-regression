@@ -39,11 +39,13 @@ Description: Output batch of size 100.
 Input_1 (np.array(?,784)): Input images data set.
 Input_1 (np.array(?,10)): Input labels data set.
 Output_1 (np.array(100,784), np.array(100, 10)): Batch of size 100.
+
+Suggestion: Maybe need to prevent replicates of random rows.
 """
 def batch(img, lab):
     toReturn1 = np.empty((0,784))
     toReturn2 = np.empty((0,10))
-    for i in range(100):
+    for i in range(200):
         r = random.randint(1, img.shape[0]-1)
         toReturn1 = np.append(toReturn1, [img[r]], axis=0)
         toReturn2 = np.append(toReturn2, [lab[r]], axis=0)
