@@ -4,7 +4,7 @@
   - Try plotting objective function
   - Try plotting preprocessed data set
 
-2. 2017.1.14 - Accuracy
+2. 2017.1.14 - Accuracy 90%
   - Achieve 90% of correctness
   - Batch size: 200
   - Step size: 0.0001
